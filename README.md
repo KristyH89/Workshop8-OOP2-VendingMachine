@@ -80,11 +80,23 @@ Includes an abstract method:
 
 #### Product Types (Inheritance)
 
-* `Snack`
-* `Beverage`
-* `Fruit`
 
-Each subclass overrides `getDescription()` → demonstrates **polymorphism**
+Each product type now includes unique fields to better demonstrate inheritance and polymorphism:
+
+#### Beverage
+- `carbonated`
+- `containsSugar`
+- `containsCaffeine`
+
+#### Snack
+- `calories`
+- `containsNuts`
+- `containsGluten`
+
+#### Fruit
+- `hasPeel`
+
+These fields allow each subclass to provide a more detailed and type‑specific implementation of `getDescription()`, including its unique attributes (e.g., sugar/caffeine for beverages, allergens for snacks, peel for fruit).
 
 ---
 
