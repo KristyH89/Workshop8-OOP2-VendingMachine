@@ -97,18 +97,18 @@ Your implementation must:
         + getDescription(): String
     }
 
-    class Snack
+    class com.vendingmachine.Snack
     class Beverage
     class Fruit
 
-    class VendingMachineImpl
+    class com.vendingmachine.VendingMachineImpl
     class ConsoleUI
 
-    Product <|-- Snack
+    Product <|-- com.vendingmachine.Snack
     Product <|-- Beverage
     Product <|-- Fruit
-    IVendingMachine <|.. VendingMachineImpl
-    VendingMachineImpl --> Product
+    IVendingMachine <|.. com.vendingmachine.VendingMachineImpl
+    com.vendingmachine.VendingMachineImpl --> Product
     ConsoleUI ..> IVendingMachine
 ```
 
@@ -116,7 +116,7 @@ Your implementation must:
 
 Write **JUnit tests** for the vending machine business logic (not ConsoleUI).
 
-> ✅ Focus on testing `VendingMachineImpl` methods and product stock/balance rules.  
+> ✅ Focus on testing `com.vendingmachine.VendingMachineImpl` methods and product stock/balance rules.  
 > ❌ Do NOT test console input/output or menu printing.
 
 ### Test Case 1 — Insert Valid Coin
