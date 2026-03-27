@@ -16,8 +16,8 @@ class VendingMachineImplTest {
     @BeforeEach
     void setUp() {
         // create a small test product list
-        cola = new Beverage(1, "Cola", 15, 3);
-        chips = new Snack(2, "Chips", 20, 2);
+        cola = new Beverage(1, "Cola", 15, 3, true, true, true);
+        chips = new Snack(2, "Chips", 20, 2, 450, false, true);
 
         vm = new VendingMachineImpl(List.of(cola, chips));
     }
